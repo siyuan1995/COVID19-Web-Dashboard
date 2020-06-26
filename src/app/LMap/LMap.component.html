@@ -1,0 +1,41 @@
+<div class="container-fluid">
+  <div class="row" style="background-color: black">
+    <div class="Banner">
+      <label style="color: white">Banner </label>
+    </div>
+  </div>
+  <div class="row" style="background-color: black">
+    <div class="Tabs">
+
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-10" style="background-color: black; padding-right: 0%; padding-left: 0%">
+          <div id="map" style="width: 100%; padding-right: 0%"></div>
+    </div>
+    <div class="col-2" style="background-color: black; padding-left: 0%; padding-right: 0%">
+      <div class="TweetsArea">
+        <div class="row" style="padding-left: 9%; padding-top: 2%; padding-right: 5%">
+          <input type="text" #titleInput style="color: white; background-color:grey;">
+          <button type="button"  (click)="FilterByKeyword(titleInput.value)" style="margin-left: 1%; background-color:grey; color: white;">Go....</button>
+        </div>
+        <div class="row" style="background-color: white; margin-left: 3%; margin-right: 2%; margin-top: 2%; margin-bottom: 2%; Height: 412px; width: 237px">
+          <div  style="overflow-y:scroll; overflow-x: scroll; background-color: black; Height: 412px; width: 237px">
+            <ul *ngFor="let ele of tweetsdata">
+              <p style="color: black;-webkit-filter: invert(100%);filter: invert(100%);">{{ele.tweet_text}}</p>
+              <hr style="color: grey">
+            </ul>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row" style="background-color: black">
+    <div class="TimeseriesCurve">
+      <label style="color: white">TimeSeriesCure </label>
+
+    </div>
+  </div>
+</div>
