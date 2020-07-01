@@ -85,6 +85,7 @@ export class Covid19HttpService {
     this.http.get('tweetsdisplay').subscribe(data => {
       layergroup.addLayer(this.VisualizeTweets(map, data));
       layergroup.addTo(map);
+      console.log('layergroup has been added to map');
     });
   }
   TransformData2Tweets(data) {

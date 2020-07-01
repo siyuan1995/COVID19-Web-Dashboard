@@ -61,6 +61,7 @@ export class LMapComponent implements  AfterViewInit, OnInit, OnChanges {
       center: [39.8282, -98.5795],
       zoom: 3
     });
+    console.log('map is initialized')
   }
   public TransformData2Tweets(data) {
     const tweets =  [];
