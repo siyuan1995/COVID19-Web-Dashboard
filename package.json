@@ -30,7 +30,7 @@
     "bootstrap": "^4.4.1",
     "csv-parser": "^2.3.2",
     "express": "^4.15.2",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "leaflet": "^1.6.0",
     "leaflet.markercluster": "^1.4.1",
     "mock-browser": "^0.92.14",
